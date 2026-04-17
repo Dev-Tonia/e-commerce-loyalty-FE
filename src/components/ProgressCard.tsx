@@ -13,7 +13,7 @@ export default function ProgressCard({ data }: { data: AchievementData }) {
   return (
     <section className="rounded-3xl bg-white p-6 shadow-[0_10px_40px_rgba(0,0,0,0.06)]">
       <div className="flex items-center gap-3 mb-6">
-        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 text-white shadow-md">
+        <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-linear-to-br from-green-500 to-emerald-600 text-white shadow-md">
           <LuTrophy className="h-5 w-5" />
         </div>
 
@@ -26,7 +26,7 @@ export default function ProgressCard({ data }: { data: AchievementData }) {
       </div>
 
       <div className="mb-4 text-sm text-slate-600">
-        {data.remaining_to_unlock_next_badge} purchase
+        {data.remaining_to_unlock_next_badge} achievement
         {data.remaining_to_unlock_next_badge !== 1 ? "s" : ""} left to unlock{" "}
         <span className="font-medium text-slate-900">{data.next_badge}</span>
       </div>
